@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +12,12 @@ body {
   color: #333;
 }
 
-html,
-body,
-#root {
-  height: 100%;
-}
-
-#root {
+.app-container {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1;
 }
